@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jingyuan Dong | 个人主页</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+            min-height: 100vh;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+
+        /* 卡片样式 */
+        .card {
+            background: white;
+            border-radius: 20px;
+            padding: 2rem;
+            margin-bottom: 2rem;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+        }
+
+        /* 头像 */
+        .avatar {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin: 0 auto 1rem;
+            display: block;
+            border: 4px solid #fff;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+        }
+
+        /* 姓名 */
+        .name {
+            text-align: center;
+            font-size: 2.5rem;
+            font-weight: 600;
+            margin-bottom: 0.5rem;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .title {
+            text-align: center;
+            color: #666;
+            margin-bottom: 1.5rem;
+        }
+
+        /* 社交链接 */
+        .social-links {
+            display: flex;
+            justify-content: center;
+            gap: 1.5rem;
+            margin: 1.5rem 0;
+        }
+
+        .social-links a {
+            color: #667eea;
+            text-decoration: none;
+            font-size: 1.2rem;
+            transition: color 0.3s;
+        }
+
+        .social-links a:hover {
+            color: #764ba2;
+        }
+
+        /* 技能标签 */
+        .skills {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.8rem;
+            margin-top: 1rem;
+        }
+
+        .skill-tag {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 0.4rem 1rem;
+            border-radius: 25px;
+            font-size: 0.9rem;
+        }
+
+        /* 研究兴趣 */
+        .interest-tag {
+            background: #f0f0f0;
+            color: #555;
+            padding: 0.4rem 1rem;
+            border-radius: 25px;
+            font-size: 0.9rem;
+        }
+
+        /* 教育经历 */
+        .education-item {
+            margin-bottom: 1rem;
+            padding-left: 1rem;
+            border-left: 3px solid #667eea;
+        }
+
+        .education-item h3 {
+            margin-bottom: 0.25rem;
+        }
+
+        .education-item .date {
+            color: #888;
+            font-size: 0.85rem;
+        }
+
+        h2 {
+            margin-bottom: 1rem;
+            color: #444;
+            font-size: 1.5rem;
+        }
+
+        hr {
+            margin: 1rem 0;
+            border: none;
+            height: 1px;
+            background: linear-gradient(to right, #667eea, transparent);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- 个人简介卡片 -->
+        <div class="card">
+            <img src="https://via.placeholder.com/150" alt="头像" class="avatar" id="avatar">
+            <h1 class="name">Jingyuan Dong</h1>
+            <div class="title">🎓 MS Student @ Chinese Academy of Sciences | 🔬 AI Security Researcher</div>
+            
+            <div class="social-links">
+                <a href="mailto:dongjingyuan25e@ict.ac.cn">📧 Email</a>
+                <a href="https://github.com/yourusername">💻 GitHub</a>
+                <a href="#">📖 Google Scholar</a>
+                <a href="#">🔗 ORCID</a>
+            </div>
+            
+            <p style="text-align: center; margin-top: 1rem;">
+                致力于深度伪造检测与多模态学习研究。热爱开源，追求技术卓越。
+            </p>
+        </div>
+
+        <!-- 教育经历卡片 -->
+        <div class="card">
+            <h2>🎓 Education</h2>
+            <div class="education-item">
+                <h3>Chinese Academy of Sciences</h3>
+                <div class="date">2025 – 2028</div>
+                <p>Master of Science, Computer Science</p>
+            </div>
+            <div class="education-item">
+                <h3>Northwestern Polytechnical University</h3>
+                <div class="date">2020 – 2024</div>
+                <p>Bachelor of Engineering, Computer Science</p>
+            </div>
+        </div>
+
+        <!-- 研究兴趣卡片 -->
+        <div class="card">
+            <h2>🔬 Research Interests</h2>
+            <div class="skills">
+                <span class="interest-tag">Deepfake Detection</span>
+                <span class="interest-tag">Multimodal Learning</span>
+                <span class="interest-tag">AI Security</span>
+                <span class="interest-tag">Computer Vision</span>
+                <span class="interest-tag">Machine Learning</span>
+            </div>
+        </div>
+
+        <!-- 技术栈卡片 -->
+        <div class="card">
+            <h2>🛠️ Tech Stack</h2>
+            <div class="skills">
+                <span class="skill-tag">Python</span>
+                <span class="skill-tag">PyTorch</span>
+                <span class="skill-tag">TensorFlow</span>
+                <span class="skill-tag">Linux</span>
+                <span class="skill-tag">Docker</span>
+                <span class="skill-tag">Git</span>
+            </div>
+        </div>
+
+        <!-- 最新动态卡片 -->
+        <div class="card">
+            <h2>📌 Latest Updates</h2>
+            <ul style="margin-left: 1.5rem;">
+                <li>🎉 2026.03: Joined Chinese Academy of Sciences as MS student</li>
+                <li>📝 2026.02: Working on Effort-AIGI Detection project</li>
+                <li>🚀 2025.12: Exploring multimodal deepfake detection methods</li>
+            </ul>
+        </div>
+
+        <!-- 联系卡片 -->
+        <div class="card">
+            <h2>📫 Contact</h2>
+            <p>📧 <strong>Email:</strong> dongjingyuan25e@ict.ac.cn</p>
+            <p>💻 <strong>GitHub:</strong> <a href="https://github.com/yourusername">github.com/yourusername</a></p>
+            <p>🎓 <strong>Google Scholar:</strong> <a href="#">Coming soon</a></p>
+            <hr>
+            <p style="text-align: center; color: #888; font-size: 0.9rem;">
+                ✨ 欢迎交流与合作 ✨
+            </p>
+        </div>
+    </div>
+
+    <script>
+        // 可选：简单的动态效果
+        console.log("Welcome to my personal page!");
+        
+        // 如果你有头像，可以替换这里的 URL
+        // document.getElementById('avatar').src = '你的头像图片链接';
+    </script>
+</body>
+</html>
